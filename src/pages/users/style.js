@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Bacgroud from "../assets/bacgroud1.svg"
+import Bacgroud from "../../assets/bacgrou2.svg"
 
 
 
@@ -24,6 +24,7 @@ export const ConteinerItens = styled.div`
     top: 251px;
     border-radius: 60px 60px 0 0;
     padding: 50px 36px;
+    backdrop-filter: blur(45px);
 
     background: 
         linear-gradient(157.44deg, 
@@ -45,44 +46,18 @@ export const H1 = styled.h1`
     margin-bottom: 80px;
     `
 
-export const Inputlabel = styled.p`
-
-    font-size: 18px;
-    font-weight: 700;
-    text-align: left;
-    color: #EEEEEE;
-    padding-left: 25px;
-`
-
-export const Input = styled.input`
-    box-shadow: 0px 4px 4px 0px #00000040;
-    background: #FFFFFF40;
-            border: none;
-    width: 342px;
-    height: 58px;
-    padding: 15px 20px 15px 25px;
-    border-radius: 14px;
-    margin: 5px 0 30px;
-
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-    color: #ffffff;
-
-`
-
 export const Button = styled.button`
     width: 342px;
     height: 74px;
-    background: #000000CC;
+    background: transparent;
     border-radius: 14px;
-    border: none;
+    border: 1px solid #ffffff;
     cursor: pointer;
     margin-top: 40px;
 
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
 
     font-size: 17px;
@@ -90,12 +65,17 @@ export const Button = styled.button`
     line-height: 28px;
     color: #ffffff;
 
+
     &:hover{
         opacity: 0.8;
     }
 
     &:active{
         opacity: 0.7;
+    }
+
+    img{
+        transform: rotate(180deg);
     }
 `
 
@@ -124,4 +104,6 @@ export const UsersCriados = styled.li`
 export const ButtonTrash = styled.button`
     background: none;
     border: none;
+    cursor: pointer;
 `
+
